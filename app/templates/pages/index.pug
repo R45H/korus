@@ -1,0 +1,12 @@
+include ../mixins/timeline
+
+.section
+	.container
+
+		each data in [timeline, timeline_2]
+
+			.main__timeline-wrap
+
+				each val in data
+					.main__timeline
+						+timeline(val)

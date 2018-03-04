@@ -1,0 +1,47 @@
+mixin timeline(data)
+	.timeline(class= attributes.class)
+
+		each val, i in data.block
+
+			- var circle = val.item.circle; //= Круг
+			- if (circle) { //= Если круг есть
+				- var circleColor = circle.color ? circle.color : ''; //= Цвет круга
+				- var isCircleFill = !!(circle.fill); //= С заливкой или нет
+				- var circleText = circle.text; //= Текст круга
+			- } else {
+				- circleColor = isCircleFill = circleText = '';
+			- }
+
+			- var line = val.item.line ? val.item.line : ''; //= Полоска
+
+			- if (line) { //= Если полоска есть
+				- if (line.color) {
+					- var lineStartColor = line.color.start ? line.color.start : ''; //= Первый цвет
+					- var lineEndColor = line.color.end ? line.color.end : ''; //= Второй цвет
+				- }
+				- var lineText = line.text; //= Текст полоски
+				- var isLineTextBot = !!(line.bottom); //= Снизу текст или нет
+				- var lineText2 = line.text_2; //= Дополнительный текст
+			- } else {
+				- lineStartColor = lineEndColor = lineText = '';
+			- }
+
+			.timeline__step
+
+				if i
+					.timeline__line(
+						class= lineStartColor ? 'timeline__line_start-color_' + lineStartColor : ''
+						class= lineEndColor ? 'timeline__line_end-color_' + lineEndColor : ''
+					)
+
+						if lineText
+							.timeline__text(class= isLineTextBot ? 'timeline__text_bottom' : '')= lineText
+							.timeline__text.timeline__text_bottom= lineText2
+
+				.timeline__circle(
+					class= circleColor ? 'timeline__circle_' + circleColor : ''
+					class= isCircleFill ? 'timeline__circle_fill' : ''
+				)
+
+					if circleText
+						.timeline__text= circleText

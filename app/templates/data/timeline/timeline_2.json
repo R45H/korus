@@ -1,0 +1,162 @@
+{
+	"timeline_2": [
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"text": "first step",
+							"bottom": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"text": "top text",
+							"text_2": "bottom text"
+						}
+					}
+				},
+				{
+					"item": {}
+				}
+			]
+		},
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success",
+								"end": "success"
+							},
+							"text": "success",
+							"bottom": true
+						},
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success"
+							},
+							"text": "progress",
+							"bottom": true
+						}
+					}
+				},
+				{
+					"item": {}
+				}
+			]
+		},
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success",
+								"end": "success"
+							}
+						},
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "warning"
+							},
+							"text": "warning",
+							"bottom": true
+						}
+					}
+				},
+				{
+					"item": {}
+				}
+			]
+		},
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success",
+								"end": "success"
+							}
+						},
+						"circle": {
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "danger",
+								"end": "danger"
+							},
+							"text": "danger",
+							"bottom": true
+						},
+						"circle": {
+							"color": "danger",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {}
+				}
+			]
+		}
+	]
+}

@@ -1,12 +1,42 @@
 html {
 	height: 100%;
 	font-size: 10px;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 body {
 	height: 100%;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-family: $font-main;
 	color: $color-text;
 	line-height: 1.5;
+}
+
+.container {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 100%;
+
+	@include screen-sm() {
+		width: 540px;
+	}
+
+	@include screen-md() {
+		width: 720px;
+	}
+
+	@include screen-lg() {
+		width: 960px;
+	}
+
+	@include screen-xl() {
+		width: 1140px;
+	}
 }

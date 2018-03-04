@@ -2,4 +2,15 @@ $name: main;
 
 .#{$name} {
 	height: 100%;
+
+	&__timeline-wrap {
+		margin: 5rem 0;
+		text-align: center;
+		overflow: auto;
+	}
+
+	&__timeline {
+		display: block;
+		margin: 1.5rem 0;
+	}
 }

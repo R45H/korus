@@ -1,0 +1,142 @@
+{
+	"timeline": [
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"text": "step first"
+						}
+					}
+				},
+				{
+					"item": {
+						"circle": {
+							"text": "step middle"
+						}
+					}
+				},
+				{
+					"item": {
+						"circle": {
+							"text": "step last"
+						}
+					}
+				}
+			]
+		},
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"text": "step first success",
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success",
+								"end": "success"
+							}
+						},
+						"circle": {
+							"text": "step progress",
+							"color": "success"
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success"
+							}
+						},
+						"circle": {
+							"text": "step last"
+						}
+					}
+				}
+			]
+		},
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"text": "step first success",
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success",
+								"end": "success"
+							}
+						},
+						"circle": {
+							"text": "step warning",
+							"color": "warning"
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "warning"
+							}
+						},
+						"circle": {
+							"text": "step last"
+						}
+					}
+				}
+			]
+		},
+		{
+			"block": [
+				{
+					"item": {
+						"circle": {
+							"text": "step first success",
+							"color": "success",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"line": {
+							"color": {
+								"start": "success",
+								"end": "danger"
+							}
+						},
+						"circle": {
+							"text": "step danger",
+							"color": "danger",
+							"fill": true
+						}
+					}
+				},
+				{
+					"item": {
+						"circle": {
+							"text": "step last"
+						}
+					}
+				}
+			]
+		}
+	]
+}

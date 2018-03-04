@@ -1,0 +1,132 @@
+$name: timeline;
+
+.#{$name} {
+	display: inline-block;
+	padding: 1rem 5rem;
+	white-space: nowrap;
+
+	&__step {
+		display: inline-block;
+	}
+
+	&__circle {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		display: inline-block;
+		vertical-align: middle;
+		border: 2px solid $color-gray;
+		color: darken($color-gray, 25%);
+		position: relative;
+
+		&_success {
+			border-color: $color-success;
+			color: $color-success;
+		}
+
+		&_warning {
+			border-color: $color-warning;
+			color: $color-warning;
+		}
+
+		&_danger {
+			border-color: $color-danger;
+			color: $color-danger;
+		}
+
+		&_fill {
+			background-color: $color-gray;
+
+			&.#{$name}__circle_success {
+				background-color: $color-success;
+			}
+
+			&.#{$name}__circle_warning {
+				background-color: $color-warning;
+			}
+
+			&.#{$name}__circle_danger {
+				background-color: $color-danger;
+			}
+		}
+	}
+
+	&__line {
+		width: 400px;
+		height: 2px;
+		display: inline-block;
+		vertical-align: middle;
+		background: $color-gray;
+		color: darken($color-gray, 25%);
+		position: relative;
+		margin: 0 2px;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+
+		&_start-color_success {
+			color: $color-success;
+
+			&::before {
+				background: linear-gradient(to right, $color-success, transparent);
+			}
+		}
+
+		&_start-color_warning {
+			color: $color-warning;
+
+			&::before {
+				background: linear-gradient(to right, $color-warning, transparent);
+			}
+		}
+
+		&_start-color_danger {
+			color: $color-danger;
+
+			&::before {
+				background: linear-gradient(to right, $color-danger, transparent);
+			}
+		}
+
+		&_end-color_success {
+
+			&::after {
+				background: linear-gradient(to left, $color-success, transparent);
+			}
+		}
+
+		&_end-color_warning {
+
+			&::after {
+				background: linear-gradient(to left, $color-warning, transparent);
+			}
+		}
+
+		&_end-color_danger {
+
+			&::after {
+				background: linear-gradient(to left, $color-danger, transparent);
+			}
+		}
+	}
+
+	&__text {
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-5px);
+
+		&_bottom {
+			bottom: auto;
+			top: 100%;
+			transform: translateX(-50%) translateY(5px);
+		}
+	}
+}
