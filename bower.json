@@ -1,0 +1,12 @@
+{
+	"name": "r45h-gulp",
+	"description": "",
+	"authors": [
+		"R45H <gmr45h@gmail.com>"
+	],
+	"license": "ISC",
+	"homepage": "",
+	"dependencies": {
+		"normalize-css": "^7.0.0"
+	}
+}
