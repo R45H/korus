@@ -1,0 +1,17 @@
+$name: title;
+
+.#{$name} {
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0 0 .3em;
+
+	&_warning {
+		color: $color-warning;
+	}
+
+	&_danger {
+		color: $color-danger;
+	}
+}

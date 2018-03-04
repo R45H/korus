@@ -15,6 +15,13 @@ $duration: .3s;
 
 $path: '../';
 
+%clear {
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
 // Брейкпоинты
 @mixin screen-sm($direct: 'min') {
 

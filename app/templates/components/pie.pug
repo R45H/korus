@@ -1,0 +1,16 @@
+.pie
+
+	.pie__cols
+
+		each val in pie
+			.pie__col
+				h2.title(class= val.status ? 'title_' + val.status : '')= val.title
+				p.pie__desc= val.desc
+
+	.pie__chart
+
+		each val in pie
+			.pie__chart-item(
+				class= val.status ? 'pie__chart-item_' + val.status : ''
+				class= val.size ? 'pie__chart-item_size_' + val.size : ''
+			)
